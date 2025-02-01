@@ -20,7 +20,6 @@ Copy
 ---
 
 ### **5. Next Steps**
-- Model training, evaluation, and deployment
 - Add **unit tests** for the Lambda function.
 - Include **architecture diagrams** in the `docs/` folder.
 - Use **CI/CD pipelines** (e.g., GitHub Actions) for automated deployment.
