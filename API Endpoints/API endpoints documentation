@@ -1,0 +1,32 @@
+GET /status
+
+Description: Checks if the API is running.
+
+Response:
+
+json
+Copy
+{
+  "statusCode": 200,
+  "body": "API is up and running."
+}
+
+
+
+
+GET /clinical-trials
+
+Description: Fetches clinical trial data for a specified condition and stores it in DynamoDB.
+
+Query Parameters:
+
+condition (optional): The medical condition to search for (default: Diabetes).
+
+Response:
+
+json
+Copy
+{
+  "statusCode": 200,
+  "body": "Fetched and stored X studies for condition: Y."
+}
