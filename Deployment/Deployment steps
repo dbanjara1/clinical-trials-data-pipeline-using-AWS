@@ -1,0 +1,35 @@
+Step1: Deploy the Lambda Function:
+
+Use the provided cloudformation.yaml template to deploy the Lambda function and API Gateway.
+
+bash
+Copy
+aws cloudformation deploy --template-file infrastructure/cloudformation.yaml --stack-name clinical-trials-stack
+
+
+Step2: Test the API:
+
+Use the following command to test the /clinical-trials endpoint:
+
+bash
+Copy
+curl -X GET "https://<api-id>.execute-api.<region>.amazonaws.com/dev/clinical-trials?condition=Cancer"
+Example Requests and Responses
+Example Request:
+
+json
+Copy
+{
+  "path": "/clinical-trials",
+  "queryStringParameters": {
+    "condition": "Cancer"
+  }
+}
+Example Response:
+
+json
+Copy
+{
+  "statusCode": 200,
+  "body": "Fetched and stored 50 studies for condition: Cancer."
+}
