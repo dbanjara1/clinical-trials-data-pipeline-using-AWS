@@ -1,4 +1,4 @@
-# Clinical Trials Study Design Prediction
+# Clinical Trials Study Design Data Pipeline
 
 This project fetches clinical trial data from the [ClinicalTrials.gov API](https://clinicaltrials.gov/api/gui), processes it, and stores it in a DynamoDB table. The goal is to build a model that predicts study design based on the fetched data.
 
