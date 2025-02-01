@@ -1,0 +1,12 @@
+Table Name: clinicaltrialdata
+Table Name: clinicaltrialdata
+Attribute Name	Data Type	Description
+studyid	String	Unique identifier for the study (NCT ID).
+title	String	Brief title of the study.
+phase	List	List of phases for the study.
+condition	String	Primary condition studied.
+design	Map	Study design information.
+study_type	String	Type of study (e.g., Interventional).
+observation_model	String	Observation model used in the study.
+intervention_model	String	Intervention model used in the study.
+time_perspective	String	Time perspective of the study
